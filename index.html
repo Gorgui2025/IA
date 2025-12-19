@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Auberge Sénégal</title>
+    <meta
+      name="description"
+      content="Auberge chaleureuse au cœur du Sénégal : chambres confortables, accueil convivial et expériences locales." />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header" data-elevate>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Auberge Sénégal – accueil">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Auberge Sénégal</span>
+            <span class="brand-tagline">Hospitalité • Culture • Confort</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false">
+          <span class="sr-only">Ouvrir le menu</span>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#about">À propos</a></li>
+            <li><a class="nav-link" href="#rooms">Chambres</a></li>
+            <li><a class="nav-link" href="#testimonials">Avis</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <a class="btn btn-primary nav-cta" href="#contact">Réserver</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Présentation">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="pill" data-reveal>Bienvenue</p>
+            <h1 class="hero-title" data-reveal>
+              Vivez une expérience authentique au cœur du Sénégal.
+            </h1>
+            <p class="hero-subtitle" data-reveal>
+              Une auberge conviviale, des chambres confortables et des conseils locaux pour découvrir Dakar et ses environs.
+            </p>
+
+            <div class="hero-actions" data-reveal>
+              <a class="btn btn-primary" href="#rooms">Explorer les chambres</a>
+              <a class="btn btn-ghost" href="#about">Découvrir l’auberge</a>
+            </div>
+
+            <dl class="hero-stats" data-reveal>
+              <div class="stat">
+                <dt>Emplacement</dt>
+                <dd>Pratique & central</dd>
+              </div>
+              <div class="stat">
+                <dt>Ambiance</dt>
+                <dd>Chaleureuse</dd>
+              </div>
+              <div class="stat">
+                <dt>Expériences</dt>
+                <dd>Culture & gastronomie</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-card" data-reveal>
+            <div class="hero-card-header">
+              <h2 class="hero-card-title">Informations rapides</h2>
+              <p class="hero-card-subtitle">Tout ce qu’il faut pour préparer votre séjour.</p>
+            </div>
+
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Adresse</strong>
+                  <span class="muted">Dakar, Sénégal</span>
+                </span>
+              </li>
+              <li class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 2v4" /><path d="M16 2v4" /><path d="M3 10h18" />
+                    <path d="M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Arrivée</strong>
+                  <span class="muted">Dès 14:00</span>
+                </span>
+              </li>
+              <li class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12a10 10 0 1 1-10-10" />
+                    <path d="M22 4v8h-8" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Réponse</strong>
+                  <span class="muted">Sous 24h</span>
+                </span>
+              </li>
+            </ul>
+
+            <a class="btn btn-secondary" href="#contact">Demander une disponibilité</a>
+            <p class="fineprint">Paiement sur place possible selon la période.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        Section À propos
+        - On ajoute la classe "about" pour appliquer une image d’arrière-plan via CSS
+          (voir .about::before dans styles.css)
+      -->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2>À propos de notre auberge</h2>
+            <p class="lead">
+              Un espace convivial offrant une atmosphère chaleureuse. Idéalement située, notre auberge vous invite à découvrir le charme et l’hospitalité du Sénégal.
+            </p>
+          </div>
+
+          <div class="features" data-reveal>
+            <article class="feature">
+              <h3>Accueil attentionné</h3>
+              <p>Des conseils locaux, des itinéraires, et une équipe disponible pour vous aider à profiter au maximum.</p>
+            </article>
+            <article class="feature">
+              <h3>Confort au quotidien</h3>
+              <p>Literie de qualité, espaces communs agréables, et une ambiance calme pour bien se reposer.</p>
+            </article>
+            <article class="feature">
+              <h3>Immersion culturelle</h3>
+              <p>Suggestions de visites, gastronomie, marchés, et rencontres : vivez Dakar comme un local.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="rooms" class="section section-alt">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2>Nos chambres</h2>
+            <p class="lead">Trois options simples et claires, pensées pour les voyageurs solo, les couples et les familles.</p>
+          </div>
+
+          <div class="cards" data-reveal>
+            <article class="card">
+              <!-- Image de la chambre (responsive + lazy-loading) -->
+              <figure class="card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80"
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Chambre simple lumineuse avec lit et décoration chaleureuse" />
+              </figure>
+              <div class="card-top">
+                <h3>Chambre Simple</h3>
+                <p class="muted">Confortable et cosy, parfaite pour les voyageurs solo.</p>
+              </div>
+              <ul class="card-list">
+                <li>Lit 1 place</li>
+                <li>Rangement</li>
+                <li>Espace de travail</li>
+              </ul>
+              <a class="btn btn-ghost" href="#contact" aria-label="Contacter pour une chambre simple">Réserver</a>
+            </article>
+
+            <article class="card card-highlight">
+              <!-- Image de la chambre (responsive + lazy-loading) -->
+              <figure class="card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1400&q=80"
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Chambre double confortable avec lit deux places et ambiance moderne" />
+              </figure>
+              <div class="card-top">
+                <p class="badge" aria-label="Le plus demandé">Populaire</p>
+                <h3>Chambre Double</h3>
+                <p class="muted">Idéale pour les couples, avec une vue agréable selon disponibilité.</p>
+              </div>
+              <ul class="card-list">
+                <li>Lit 2 places</li>
+                <li>Coin détente</li>
+                <li>Ventilation naturelle</li>
+              </ul>
+              <a class="btn btn-primary" href="#contact" aria-label="Contacter pour une chambre double">Réserver</a>
+            </article>
+
+            <article class="card">
+              <!-- Image de la chambre (responsive + lazy-loading) -->
+              <figure class="card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1400&q=80"
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Suite familiale spacieuse avec lits et espace salon" />
+              </figure>
+              <div class="card-top">
+                <h3>Suite Familiale</h3>
+                <p class="muted">Spacieuse, parfaite pour des vacances en famille.</p>
+              </div>
+              <ul class="card-list">
+                <li>2 à 5 personnes</li>
+                <li>Espace salon</li>
+                <li>Rangements</li>
+              </ul>
+              <a class="btn btn-ghost" href="#contact" aria-label="Contacter pour une suite familiale">Réserver</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2>Avis de nos clients</h2>
+            <p class="lead">Quelques retours récents. Le carrousel démarre automatiquement et reste accessible.</p>
+          </div>
+
+          <div class="testimonial" data-carousel data-reveal>
+            <div class="testimonial-inner" aria-live="polite">
+              <figure class="quote is-active">
+                <blockquote>« Une expérience incroyable, accueil chaleureux et chambres confortables ! »</blockquote>
+                <figcaption>Marie</figcaption>
+              </figure>
+              <figure class="quote">
+                <blockquote>« L’endroit parfait pour découvrir Dakar. Je reviendrai ! »</blockquote>
+                <figcaption>Ahmed</figcaption>
+              </figure>
+              <figure class="quote">
+                <blockquote>« Très propre, bien situé, et l’équipe donne de super conseils pour les sorties. »</blockquote>
+                <figcaption>Awa</figcaption>
+              </figure>
+            </div>
+
+            <div class="testimonial-controls">
+              <button class="icon-btn" type="button" data-prev aria-label="Avis précédent">
+                <span aria-hidden="true">←</span>
+              </button>
+              <div class="dots" role="tablist" aria-label="Sélectionner un avis">
+                <button class="dot is-active" type="button" role="tab" aria-selected="true" aria-label="Avis 1" data-dot="0"></button>
+                <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Avis 2" data-dot="1"></button>
+                <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Avis 3" data-dot="2"></button>
+              </div>
+              <button class="icon-btn" type="button" data-next aria-label="Avis suivant">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2>Contactez-nous</h2>
+            <p class="lead">Une question, une disponibilité, un tarif ? Écrivez-nous et on vous répond rapidement.</p>
+          </div>
+
+          <div class="contact-grid" data-reveal>
+            <div class="contact-card">
+              <h3>Coordonnées</h3>
+              <p class="contact-line"><strong>Email :</strong> <a href="mailto:contact@aubergesenegal.com">contact@aubergesenegal.com</a></p>
+              <p class="contact-line"><strong>Téléphone :</strong> <a href="tel:+221331234567">+221 33 123 45 67</a></p>
+              <p class="muted">Horaires : 08:00 – 20:00 (heure locale)</p>
+            </div>
+
+            <form class="form" data-contact-form>
+              <div class="form-row">
+                <label>
+                  <span>Nom</span>
+                  <input name="name" autocomplete="name" required placeholder="Votre nom" />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="email" required placeholder="vous@exemple.com" />
+                </label>
+              </div>
+
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" required placeholder="Dates, nombre de personnes, besoins…"></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+                <p class="fineprint" data-form-status role="status"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2025</span> Auberge Sénégal. Tous droits réservés.</p>
+        <a class="to-top" href="#top">Haut de page</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
