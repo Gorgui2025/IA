@@ -465,6 +465,13 @@ body.nav-open .nav-toggle-lines::after {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* =========================
+   À PROPOS : image de fond
+   =========================
+   - La classe .about est ajoutée sur la section #about dans index.html
+   - On utilise ::before pour afficher une image + un overlay
+     sans toucher au contenu HTML (texte reste au-dessus)
+*/
 .about {
   position: relative;
   isolation: isolate;
@@ -542,6 +549,12 @@ body.nav-open .nav-toggle-lines::after {
   gap: 14px;
 }
 
+/* =========================
+   CHAMBRES : images en carte
+   =========================
+   - .card-media est le conteneur de l'image (ratio fixe + overflow hidden)
+   - L'image est recadrée proprement avec object-fit: cover
+*/
 .card-media {
   margin: 0;
   border-radius: 16px;
@@ -559,6 +572,7 @@ body.nav-open .nav-toggle-lines::after {
   transition: transform 220ms ease;
 }
 
+/* Petit effet au survol (optionnel) */
 .card:hover .card-media img {
   transform: scale(1.06);
 }
